@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "globalHeader": "http://localhost:3000/header-v2.mjs",
+    "globalFooter": "http://localhost:3000/footer-v1.mjs"
+  }
+}

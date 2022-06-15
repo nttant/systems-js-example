@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test static content</title>
+</head>
+<body>
+    <div id="global-header"></div>
+    <div id="root"></div>
+    <div id="global-footer"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/6.12.1/system.min.js"></script>
+    <script type="systemjs-importmap" src="http://localhost:3000/import-map.json"></script>
+    <script src="./my-app.js"></script>
+    <script>
+        System.import('globalHeader')
+        .then(module => module.default())
+        .catch(/* ... */);
+    </script>
+    <script>
+        System.import('globalFooter')
+        .then(module => module.default())
+        .catch(/* ... */);
+    </script>
+</body>
+</html>

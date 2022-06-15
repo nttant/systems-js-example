@@ -1,0 +1,15 @@
+{
+  "name": "header-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/header-v1.js",
+  "scripts": {
+    "build": "rollup ./src/header-v1.js --file ./dist/header-v1.js --format system",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup": "^2.75.6"
+  }
+}
